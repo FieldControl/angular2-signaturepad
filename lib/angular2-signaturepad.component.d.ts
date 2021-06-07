@@ -1,5 +1,4 @@
 import { AfterContentInit, ElementRef, EventEmitter, OnDestroy } from '@angular/core';
-import * as i0 from "@angular/core";
 export interface Point {
     x: number;
     y: number;
@@ -28,7 +27,4 @@ export declare class SignaturePad implements AfterContentInit, OnDestroy {
     onBegin(): void;
     onEnd(): void;
     queryPad(): any;
-    static ɵfac: i0.ɵɵFactoryDef<SignaturePad, never>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<SignaturePad, "signature-pad", never, { "options": "options"; }, { "onBeginEvent": "onBeginEvent"; "onEndEvent": "onEndEvent"; }, never, never>;
 }
-//# sourceMappingURL=angular2-signaturepad.component.d.ts.map

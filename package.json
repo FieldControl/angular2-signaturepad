@@ -1,47 +1,67 @@
 {
-  "name": "angular2-signaturepad",
-  "version": "3.0.4",
-  "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+  "_from": "angular2-signaturepad",
+  "_id": "angular2-signaturepad@3.0.4",
+  "_inBundle": false,
+  "_integrity": "sha512-KRWlFIU77V8NiiAWYDNU7egfBJmvczr3qVjpw6m3KsT125WPwtBBzmD+/IJwRTWa5mUgykBEFYrsesKWolAXsQ==",
+  "_location": "/angular2-signaturepad",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "angular2-signaturepad",
+    "name": "angular2-signaturepad",
+    "escapedName": "angular2-signaturepad",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
   },
-  "main": "/dist/esm2015/angular2-signaturepad.js",
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/angular2-signaturepad/-/angular2-signaturepad-3.0.4.tgz",
+  "_shasum": "d013744eba51c7710756dc5b0d7071d9044ae026",
+  "_spec": "angular2-signaturepad",
+  "_where": "/home/fieldcontrol/Field/orc-2",
+  "author": {
+    "name": "Wulf Solter",
+    "email": "wulf@wulf.co.nz",
+    "url": "http://wulf.co.nz"
+  },
+  "bugs": {
+    "url": "https://github.com/wulfsolter/angular2-signaturepad/issues"
+  },
+  "bundleDependencies": false,
   "dependencies": {
-    "@angular/animations": "~11.1.0",
-    "@angular/common": "~11.1.0",
-    "@angular/compiler": "~11.1.0",
-    "@angular/core": "~11.1.0",
-    "@angular/forms": "~11.1.0",
-    "@angular/platform-browser": "~11.1.0",
-    "@angular/platform-browser-dynamic": "~11.1.0",
-    "@angular/router": "~11.1.0",
-    "rxjs": "~6.6.3",
-    "signature_pad": "^2.3.2",
-    "tslib": "^2.1.0",
-    "zone.js": "~0.11.3"
+    "signature_pad": "2.3.2",
+    "tslib": "^2.0.0"
   },
-  "devDependencies": {
-    "@angular-devkit/build-angular": "~0.1101.0",
-    "@angular/cli": "~11.1.0",
-    "@angular/compiler-cli": "~11.1.0",
-    "@types/jasmine": "~3.6.3",
-    "@types/node": "^14.14.22",
-    "codelyzer": "^6.0.1",
-    "jasmine-core": "~3.6.0",
-    "jasmine-spec-reporter": "~6.0.0",
-    "karma": "~6.0.1",
-    "karma-chrome-launcher": "~3.1.0",
-    "karma-coverage": "~2.0.3",
-    "karma-jasmine": "~4.0.1",
-    "karma-jasmine-html-reporter": "^1.5.4",
-    "ng-packagr": "^11.1.2",
-    "protractor": "~7.0.0",
-    "ts-node": "~9.1.1",
-    "tslint": "~6.1.0",
-    "typescript": "~4.0.5"
-  }
+  "deprecated": false,
+  "description": "Angular2 Component wrapper for szimek / signature_pad",
+  "es2015": "fesm2015/angular2-signaturepad.js",
+  "esm2015": "esm2015/angular2-signaturepad.js",
+  "fesm2015": "fesm2015/angular2-signaturepad.js",
+  "homepage": "https://github.com/wulfsolter/angular2-signaturepad#readme",
+  "keywords": [
+    "signature",
+    "sign",
+    "finger",
+    "canvas"
+  ],
+  "license": "MIT",
+  "main": "bundles/angular2-signaturepad.umd.js",
+  "metadata": "angular2-signaturepad.metadata.json",
+  "module": "fesm2015/angular2-signaturepad.js",
+  "name": "angular2-signaturepad",
+  "peerDependencies": {
+    "@angular/common": "^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0",
+    "@angular/core": "^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wulfsolter/angular2-signaturepad.git"
+  },
+  "sideEffects": false,
+  "typings": "angular2-signaturepad.d.ts",
+  "version": "3.0.4"
 }

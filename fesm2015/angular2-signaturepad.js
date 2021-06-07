@@ -1,4 +1,4 @@
-import { EventEmitter, ɵɵdirectiveInject, ElementRef, ɵɵdefineComponent, ɵɵelement, ɵsetClassMetadata, Component, Input, Output, ɵɵdefineNgModule, ɵɵdefineInjector, ɵɵsetNgModuleScope, NgModule } from '@angular/core';
+import { EventEmitter, Component, ElementRef, Input, Output, NgModule } from '@angular/core';
 import SignaturePadNative from 'signature_pad';
 
 class SignaturePad {
@@ -107,37 +107,30 @@ class SignaturePad {
         return this.signaturePad;
     }
 }
-SignaturePad.ɵfac = function SignaturePad_Factory(t) { return new (t || SignaturePad)(ɵɵdirectiveInject(ElementRef)); };
-SignaturePad.ɵcmp = ɵɵdefineComponent({ type: SignaturePad, selectors: [["signature-pad"]], inputs: { options: "options" }, outputs: { onBeginEvent: "onBeginEvent", onEndEvent: "onEndEvent" }, decls: 1, vars: 0, template: function SignaturePad_Template(rf, ctx) { if (rf & 1) {
-        ɵɵelement(0, "canvas");
-    } }, encapsulation: 2 });
-(function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassMetadata(SignaturePad, [{
-        type: Component,
-        args: [{
+SignaturePad.decorators = [
+    { type: Component, args: [{
                 template: '<canvas></canvas>',
-                selector: 'signature-pad',
-            }]
-    }], function () { return [{ type: ElementRef }]; }, { options: [{
-            type: Input
-        }], onBeginEvent: [{
-            type: Output
-        }], onEndEvent: [{
-            type: Output
-        }] }); })();
+                selector: 'signature-pad'
+            },] }
+];
+SignaturePad.ctorParameters = () => [
+    { type: ElementRef }
+];
+SignaturePad.propDecorators = {
+    options: [{ type: Input }],
+    onBeginEvent: [{ type: Output }],
+    onEndEvent: [{ type: Output }]
+};
 
 class SignaturePadModule {
 }
-SignaturePadModule.ɵmod = ɵɵdefineNgModule({ type: SignaturePadModule });
-SignaturePadModule.ɵinj = ɵɵdefineInjector({ factory: function SignaturePadModule_Factory(t) { return new (t || SignaturePadModule)(); }, imports: [[]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵɵsetNgModuleScope(SignaturePadModule, { declarations: [SignaturePad], exports: [SignaturePad] }); })();
-(function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassMetadata(SignaturePadModule, [{
-        type: NgModule,
-        args: [{
+SignaturePadModule.decorators = [
+    { type: NgModule, args: [{
                 declarations: [SignaturePad],
                 imports: [],
                 exports: [SignaturePad],
-            }]
-    }], null, null); })();
+            },] }
+];
 
 /*
  * Public API Surface of angular2-signaturepad

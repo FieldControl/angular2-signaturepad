@@ -2,7 +2,7 @@
     typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('signature_pad')) :
     typeof define === 'function' && define.amd ? define('angular2-signaturepad', ['exports', '@angular/core', 'signature_pad'], factory) :
     (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global['angular2-signaturepad'] = {}, global.ng.core, global.SignaturePadNative));
-}(this, (function (exports, i0, SignaturePadNative) { 'use strict';
+}(this, (function (exports, core, SignaturePadNative) { 'use strict';
 
     function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
@@ -13,8 +13,8 @@
             // no op
             this.elementRef = elementRef;
             this.options = this.options || {};
-            this.onBeginEvent = new i0.EventEmitter();
-            this.onEndEvent = new i0.EventEmitter();
+            this.onBeginEvent = new core.EventEmitter();
+            this.onEndEvent = new core.EventEmitter();
         }
         SignaturePad.prototype.ngAfterContentInit = function () {
             var canvas = this.elementRef.nativeElement.querySelector('canvas');
@@ -116,46 +116,33 @@
         };
         return SignaturePad;
     }());
-    SignaturePad.ɵfac = function SignaturePad_Factory(t) { return new (t || SignaturePad)(i0.ɵɵdirectiveInject(i0.ElementRef)); };
-    SignaturePad.ɵcmp = i0.ɵɵdefineComponent({ type: SignaturePad, selectors: [["signature-pad"]], inputs: { options: "options" }, outputs: { onBeginEvent: "onBeginEvent", onEndEvent: "onEndEvent" }, decls: 1, vars: 0, template: function SignaturePad_Template(rf, ctx) {
-            if (rf & 1) {
-                i0.ɵɵelement(0, "canvas");
-            }
-        }, encapsulation: 2 });
-    (function () {
-        (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(SignaturePad, [{
-                type: i0.Component,
-                args: [{
-                        template: '<canvas></canvas>',
-                        selector: 'signature-pad',
-                    }]
-            }], function () { return [{ type: i0.ElementRef }]; }, { options: [{
-                    type: i0.Input
-                }], onBeginEvent: [{
-                    type: i0.Output
-                }], onEndEvent: [{
-                    type: i0.Output
-                }] });
-    })();
+    SignaturePad.decorators = [
+        { type: core.Component, args: [{
+                    template: '<canvas></canvas>',
+                    selector: 'signature-pad'
+                },] }
+    ];
+    SignaturePad.ctorParameters = function () { return [
+        { type: core.ElementRef }
+    ]; };
+    SignaturePad.propDecorators = {
+        options: [{ type: core.Input }],
+        onBeginEvent: [{ type: core.Output }],
+        onEndEvent: [{ type: core.Output }]
+    };
 
     var SignaturePadModule = /** @class */ (function () {
         function SignaturePadModule() {
         }
         return SignaturePadModule;
     }());
-    SignaturePadModule.ɵmod = i0.ɵɵdefineNgModule({ type: SignaturePadModule });
-    SignaturePadModule.ɵinj = i0.ɵɵdefineInjector({ factory: function SignaturePadModule_Factory(t) { return new (t || SignaturePadModule)(); }, imports: [[]] });
-    (function () { (typeof ngJitMode === "undefined" || ngJitMode) && i0.ɵɵsetNgModuleScope(SignaturePadModule, { declarations: [SignaturePad], exports: [SignaturePad] }); })();
-    (function () {
-        (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(SignaturePadModule, [{
-                type: i0.NgModule,
-                args: [{
-                        declarations: [SignaturePad],
-                        imports: [],
-                        exports: [SignaturePad],
-                    }]
-            }], null, null);
-    })();
+    SignaturePadModule.decorators = [
+        { type: core.NgModule, args: [{
+                    declarations: [SignaturePad],
+                    imports: [],
+                    exports: [SignaturePad],
+                },] }
+    ];
 
     /*
      * Public API Surface of angular2-signaturepad
